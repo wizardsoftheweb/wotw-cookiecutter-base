@@ -4,7 +4,7 @@ notifications:
     on_success: never
     on_failure: change
 
-cache: pip
+# cache: pip
 
 sudo: false
 
