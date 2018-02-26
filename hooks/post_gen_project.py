@@ -14,4 +14,20 @@ check_call(['git', 'add', '.editorconfig'])
 check_call(['git', 'commit', '-m', 'Define Editor Config'])
 check_call(['git', 'add', 'README.md'])
 check_call(['git', 'commit', '-m', 'Create basic README'])
+check_call(
+    [
+        'git',
+        'add',
+        '.gitignore',
+        '{{ cookiecutter.directory_name }}.sublime-project'
+    ]
+)
+check_call(
+    [
+        'git',
+        'commit',
+        '-m',
+        'Add simple Sublime project and ignore extraneous Sublime components'
+    ]
+)
 check_call(['git', 'flow', 'init', '-d'])
