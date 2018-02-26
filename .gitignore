@@ -1,0 +1,3 @@
+*.sublime*
+!wotw-cookiecutter-base.sublime-project
+!{{cookiecutter.directory_name}}/{{cookiecutter.directory_name}}.sublime-project
