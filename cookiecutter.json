@@ -1,0 +1,5 @@
+{
+  "directory_name": "wotw-project",
+  "year": "{% now 'utc', '%Y' %}",
+  "_extensions": ["jinja2_time.TimeExtension"]
+}
