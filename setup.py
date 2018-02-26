@@ -1,6 +1,6 @@
 """This file sets up the package"""
 
-from setuptools import setup, find_packages
+from setuptools import setup
 
 with open('VERSION') as version_file:
     __version__ = version_file.read().strip()
@@ -8,7 +8,7 @@ with open('VERSION') as version_file:
 setup(
     name='wotw-cookiecutter-base',
     version=__version__,
-    packages=find_packages(),
+    packages=[],
     package_data={
         '': [
             'VERSION',
